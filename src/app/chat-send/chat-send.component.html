@@ -1,0 +1,12 @@
+<div class="send">
+  <input 
+  class="send__input" 
+  type="text" 
+  #newItem
+  (submit)="onSubmit()"
+  name="mes"
+  [(ngModel)]="mes" required
+  placeholder="Start typing your message..."
+  (keyup.enter)="onSubmit()">
+  <button class="send__button" (click)="onSubmit()" >SEND</button>
+</div>
